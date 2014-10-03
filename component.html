@@ -2,12 +2,8 @@
 
 <script>
 	Polymer('web-font', {
-		created: function() {
+		ready: function() {
 
-			var self = this;
-
-			this.src = this.attributes.src.value;
-			this.family = this.attributes.family.value;
 			if( typeof FontFace == "function"){
 				var font = new FontFace(this.family, "url("+ this.src +")", {});
 				font.load().then(function ( loaded ) {
@@ -16,7 +12,6 @@
 					document.body.style.display= "none";
 					var redrawFix = document.body.offsetHeight;
 					document.body.style.display="block";
-					//document.body.style.fontFamily = self.family;
 				});
 			} else {
 				// load style font-face
