@@ -1,9 +1,10 @@
 {
 	"name": "web-font",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "A web component that creates an element to load web fonts",
 	"authors": [
-		"Makis Tracend <makis@makesit.es>"
+		"Makis Tracend <makis@makesit.es>",
+		"Gavin Mogan <gavin@kodekoan.com>"
 	],
 	"license": "MIT",
 	"keywords": [
@@ -14,14 +15,14 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/makesites/font.git"
+		"url": "git://github.com/halkeye/web-font.git"
 	},
 	"ignore": [
 		"bower_components",
 		"node_modules"
 	],
 	"dependencies": {
-		"platform": "Polymer/platform#~0.2.3",
-		"polymer": "Polymer/polymer#~0.2.3"
+		"platform": "Polymer/platform#~0.4.x",
+		"polymer": "Polymer/polymer#~0.4.x"
 	}
 }
